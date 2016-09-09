@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Sea Chess";
+}
+<h2 class="text-center">@ViewData["Title"]</h2>
+<div id="game-wrapper" class="col-md-7 col-md-offset-3">
+    <div id="header">
+            <ul id="options">
+                <li id="player1" class="select dropdown">
+                    <div class="select form-control">Human</div>
+                    <ul class="dropdown-menu">
+                        <li class="option">Human</li>
+                        <li class="divider"></li>
+                        <li class="option">Computer</li>
+                    </ul>
+                </li>
+                <li id="player2" class="select dropdown">
+                    <div class="select form-control">Computer</div>
+                    <ul class="dropdown-menu">
+                        <li class="option">Human</li>
+                        <li class="divider"></li>
+                        <li class="option">Computer</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    <div id="board">
+        <div class="row">
+            <div class="tile" boardx="0" boardy="0" boardz="2"></div>
+            <div class="tile" boardx="1" boardy="0" boardz="2"></div>
+            <div class="tile" boardx="2" boardy="0" boardz="2"></div>
+        </div>
+        <div class="row">
+            <div class="tile" boardx="0" boardy="1" boardz="2"></div>
+            <div class="tile" boardx="1" boardy="1" boardz="2"></div>
+            <div class="tile" boardx="2" boardy="1" boardz="2"></div>
+        </div>
+        <div class="row">
+            <div class="tile" boardx="0" boardy="2" boardz="2"></div>
+            <div class="tile" boardx="1" boardy="2" boardz="2"></div>
+            <div class="tile" boardx="2" boardy="2" boardz="2"></div>
+        </div>
+    </div>
+
+    <div class="board-row">
+        <div class="row">
+            <div class="tile" boardx="0" boardy="0" boardz="1"></div>
+            <div class="tile" boardx="1" boardy="0" boardz="1"></div>
+            <div class="tile" boardx="2" boardy="0" boardz="1"></div>
+        </div>
+        <div class="row">
+            <div class="tile" boardx="0" boardy="1" boardz="1"></div>
+            <div class="tile" boardx="1" boardy="1" boardz="1"></div>
+            <div class="tile" boardx="2" boardy="1" boardz="1"></div>
+        </div>
+        <div class="row">
+            <div class="tile" boardx="0" boardy="2" boardz="1"></div>
+            <div class="tile" boardx="1" boardy="2" boardz="1"></div>
+            <div class="tile" boardx="2" boardy="2" boardz="1"></div>
+        </div>
+    </div>
+
+    <div class="board-row">
+        <div class="row">
+            <div class="tile" boardx="0" boardy="0" boardz="0"></div>
+            <div class="tile" boardx="1" boardy="0" boardz="0"></div>
+            <div class="tile" boardx="2" boardy="0" boardz="0"></div>
+        </div>
+        <div class="row">
+            <div class="tile" boardx="0" boardy="1" boardz="0"></div>
+            <div class="tile" boardx="1" boardy="1" boardz="0"></div>
+            <div class="tile" boardx="2" boardy="1" boardz="0"></div>
+        </div>
+        <div class="row">
+            <div class="tile" boardx="0" boardy="2" boardz="0"></div>
+            <div class="tile" boardx="1" boardy="2" boardz="0"></div>
+            <div class="tile" boardx="2" boardy="2" boardz="0"></div>
+        </div>
+    </div>
+
+    <canvas id="output" width="500" height="500">
+        You need HTML 5 enabled
+    </canvas>
+
+    <div id="game-message-container" style="display: none">
+        <h3 id="game-message" class="text-center"></h3>
+        Play another game?
+        <button id="start-new-game" class="btn btn-primary pull-right" type="button">New Game</button>
+    </div>
+</div>
